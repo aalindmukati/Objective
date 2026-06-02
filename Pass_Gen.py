@@ -3,3 +3,6 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
 symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '{', '}', '[', ']', '|', '\\', ':', ';', '"', "'", '<', '>', ',', '.', '?', '/']
 
 print("Welcomne to Password Generator")
+no_letters = int(input("Enter the number of letters"))
+no_numbers = int(input("Enter the number of numbers"))
+no_symbols = int(inptu("Enter the number of symbols"))

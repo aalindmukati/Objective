@@ -34,7 +34,7 @@ def decrypt(original_text, shift_amount):
 
 
 if(direction == 1):
-    encrypt(original_text, shift_amount)
+    encrypt(original_text = text, shift_amount = number)
 elif(direction == 2):
-    decrypt(original_text, shift_amount)
+    decrypt(original_text = text, shift_amount = number)
 

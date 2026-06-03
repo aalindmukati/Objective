@@ -9,10 +9,16 @@ def user_Details():
     User = {'name' : name , 'Bid' : Bid}
     Data.append(User)
     
+def Result():
+    winner = max(Data,key=lambda player: player['Bid'])
+    print(winner)
 
-user_Details()
-
-Other = input("Any other players who wanna play ").lower()
-
-while Other == "yes":
+while True:
     user_Details()
+    Other = input("Any other players who wanna play (yes or no)").lower()
+    
+    if Other == "no":
+        print('''-------------------------------------------------------------------------------------------------------------------------------------------------''')
+
+        Result()
+        break

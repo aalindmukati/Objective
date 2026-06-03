@@ -1,6 +1,6 @@
 print('''-------------------------------------------------------------------------------------------------------------------------------------------------
 ''')
-alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',' ']
 
 direction = int(input(f"if u want to Encrypt press {1} and to Decrypt press {2} "))
 text = input("Enter your message here ").lower()
@@ -13,7 +13,7 @@ def encrypt(original_text, shift_amount):
 
     for letter in original_text:
         
-        shifted_pos = (alphabet_list.index(letter) + shift_amount) % 26
+        shifted_pos = (alphabet_list.index(letter) + shift_amount) % 27
         
         cipher_text += alphabet_list[shifted_pos]
         
@@ -26,7 +26,7 @@ def decrypt(original_text, shift_amount):
 
     for letter in original_text:
         
-        shifted_pos = (alphabet_list.index(letter) - shift_amount) % 26
+        shifted_pos = (alphabet_list.index(letter) - shift_amount) % 27
         
         cipher_text += alphabet_list[shifted_pos]
         

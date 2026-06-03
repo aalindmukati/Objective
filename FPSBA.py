@@ -2,12 +2,17 @@ print("First price Based auction")
 print('''-------------------------------------------------------------------------------------------------------------------------------------------------''')
 
 Data = []
-name = input('What is ur first name ')
 
-Bid = int(input('How much money u wanna bid '))
+def user_Details():
+    name = input('What is ur first name ')
+    Bid = int(input('How much money u wanna bid '))
+    User = {'name' : name , 'Bid' : Bid}
+    Data.append(User)
+    
 
-User = {'name' = name , 'Bid' = Bid}
+user_Details()
 
-Data.append(User)
+Other = input("Any other players who wanna play ").lower()
 
-print(Data)
+while Other == "yes":
+    user_Details()

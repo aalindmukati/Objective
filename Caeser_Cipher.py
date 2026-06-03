@@ -33,3 +33,8 @@ def decrypt(original_text, shift_amount):
     print(f"here is the decoded result: {cipher_text}")
 
 
+if(direction == 1):
+    encrypt(original_text, shift_amount)
+elif(direction == 2):
+    decrypt(original_text, shift_amount)
+

@@ -11,22 +11,23 @@ blackjack_values = {
 User_card=[]
 Comp_card =[]
 
+#Assigns random cards and then appends it to the user 
 for _ in range(2):
-    pata = random.choice(list(blackjack_values)) 
+    pata = random.choice(list(blackjack_values))  
     User_card.append(pata)
 
 print(f'the User card is {User_card}')
 
-
+#Assigns random cards and then appends it to the Computer 
 for _ in range(2):
     pata = random.choice(list(blackjack_values))
     Comp_card.append(pata)
-
+#Create a function to count the total value of cards in hand
 def calculate_score(hand):
     score = 0
     ace_count = hand.count('A')
     
-    # Add up the raw dictionary values
+    # Add up the raw dictionary values and update in score
     for card in hand:
         score += blackjack_values[card]
         

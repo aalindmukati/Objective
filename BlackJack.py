@@ -11,12 +11,12 @@ Comp_card =[]
 for _ in range(2):
     pata = random.choice(blackjack_values)
     User_card.append(pata)
-    print(f'the User card is {User_card}')
+
+print(f'the User card is {User_card}')
 
 for _ in range(2):
     pata = random.choice(blackjack_values)
     Comp_card.append(pata)
-    print(f'the Computer card is {Comp_card}')
 
 choice = input("Would u like to hit or stand ").lower()
 if choice == 'hit':
@@ -24,4 +24,4 @@ if choice == 'hit':
     User_card.append(pata)
     print(User_card)
 else:
-    print("ok")
+    print(f'the Computer card is {Comp_card}')

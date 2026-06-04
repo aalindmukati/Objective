@@ -10,6 +10,7 @@ blackjack_values = {
 
 User_card=[]
 Comp_card =[]
+score = 0
 
 for _ in range(2):
     pata = random.choice(list(blackjack_values)) 
@@ -18,7 +19,6 @@ for _ in range(2):
 print(f'the User card is {User_card}')
 
 def calculate_score(hand):
-    score = 0
     ace_count = hand.count('A')
     
     # Add up the raw dictionary values
@@ -44,3 +44,5 @@ if choice == 'hit':
 else:
     print(f'the Computer card is {Comp_card}')
 
+if score > 21:
+    print(f'the Computer card is {Comp_card}') and print("Sorry man u loose")

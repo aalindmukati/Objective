@@ -42,7 +42,7 @@ user_playing = True
 
 while user_playing:
     User_score = calculate_score(User_card)
-    print(f'Your Current score is{User_score}')
+    print(f'Your Current score is {User_score}')
 
     if User_score >= 21:
         break
@@ -56,3 +56,28 @@ while user_playing:
         user_playing = False
     else:
         print("Invalid input. Please type 'hit' or 'stand'.")
+
+User_score = calculate_score(User_card)
+
+if User_score>21:
+    print(f'the Computer card is {Comp_card}')
+    print("Sorry man u loose")
+else:
+    Comp_score = calculate_score(Comp_card)
+
+    while Comp_score < 17:
+        pata = random.choice(list(blackjack_values))
+        Comp_card.append(pata)
+        Comp_card = calculate_score(Comp_card)
+
+        print(f"\nThe Final Computer hand is {Comp_card} with a score of: {Comp_score}")
+    
+    if Comp_score > 21:
+        print("The Computer busted! You win! 🎉")
+        print(Comp_score)
+    elif User_score > Comp_score:
+        print("You have a higher score than the Computer! You win! 🎉")
+    elif User_score < Comp_score:
+        print("The Computer has a higher score. You lose. 😞")
+    else:
+        print("It's a tie (Push)! 🤝")

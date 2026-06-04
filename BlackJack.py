@@ -10,7 +10,6 @@ blackjack_values = {
 
 User_card=[]
 Comp_card =[]
-score = 0
 
 for _ in range(2):
     pata = random.choice(list(blackjack_values)) 
@@ -18,7 +17,13 @@ for _ in range(2):
 
 print(f'the User card is {User_card}')
 
+
+for _ in range(2):
+    pata = random.choice(list(blackjack_values))
+    Comp_card.append(pata)
+
 def calculate_score(hand):
+    score = 0
     ace_count = hand.count('A')
     
     # Add up the raw dictionary values
@@ -32,17 +37,22 @@ def calculate_score(hand):
         
     return score
 
-for _ in range(2):
-    pata = random.choice(list(blackjack_values))
-    Comp_card.append(pata)
+User_score = calculate_score(User_card)
+user_playing = True
 
-choice = input("Would u like to hit or stand ").lower()
-if choice == 'hit':
-    pata = random.choice(list(blackjack_values))
-    User_card.append(pata)
-    print(User_card)
-else:
-    print(f'the Computer card is {Comp_card}')
+while user_playing:
+    User_score = calculate_score(User_card)
+    print(f'Your Current score is{User_score}')
 
-if score > 21:
-    print(f'the Computer card is {Comp_card}') and print("Sorry man u loose")
+    if User_score >= 21:
+        break
+    choice = input(f"Would u like to hit or stand ").lower()
+
+    if choice == "hit":
+        pata = random.choice(list(blackjack_values))
+        User_card.append(pata)
+        print(User_card)
+    elif choice == 'stand':
+        user_playing = False
+    else:
+        print("Invalid input. Please type 'hit' or 'stand'.")

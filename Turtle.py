@@ -17,3 +17,5 @@ t.forward(150)
 my_screen.bgcolor("Purple")
 
 my_screen.exitonclick()
+
+print("Everything worked")

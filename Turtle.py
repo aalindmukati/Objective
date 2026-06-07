@@ -19,3 +19,5 @@ my_screen.bgcolor("Purple")
 my_screen.exitonclick()
 
 print("Everything worked")
+
+#BTW to install a package in most compilers u can go to terminal and write pip install <package name>

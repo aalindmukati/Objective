@@ -4,11 +4,17 @@ import random
 Aj = Turtle()
 screen = Screen()
 
-colors = ['red','blue','green','yellow','black']
-direction = [0,60,90,270,180]
+colors = ['red','blue','green','cyan','black']
+direction = [0,30,45,60,90,120,270,180]
 
-for path in range(1,51):
-    Aj.forward(36)
+screen.screensize(100,100)
+Aj.speed(10)
+
+for path in range(70):
+    Aj.color(random.choice(colors))
+    Aj.forward(30)
     Aj.setheading(random.choice(direction))
+
+Aj.goto(0,0)
 
 screen.exitonclick()

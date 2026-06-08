@@ -18,7 +18,7 @@ angle = [0,30,45,60,90,120,270,180]
 screen.screensize(100,100)
 Aj.speed(30)
 
-for path in range(50):
+for path in range(3):
     Aj.color(random_color())
     Aj.circle(30)
     Aj.left(10)
@@ -29,4 +29,5 @@ Aj.goto(0,0)
 Aj.goto(100,-20)
 Aj.goto(-100,-20)
 Aj.goto(0,0)
+
 screen.exitonclick()

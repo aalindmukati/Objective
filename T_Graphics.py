@@ -1,5 +1,5 @@
 from turtle import Turtle,Screen
-
+from random import *
 jason = Turtle()
 bas = Turtle()
 my_screen = Screen()
@@ -8,7 +8,7 @@ jason.shape("turtle")
 jason.color('green')
 my_screen.bgcolor('orange')
 
-jason.speed(3)
+jason.speed(7)
 jason.forward(100)
 jason.right(90)
 jason.forward(100)
@@ -28,5 +28,7 @@ bas.circle(-120)
 jason.pensize(5)
 jason.goto(134,-45)
 bas.goto(84,-45)
+x = choice([1,2,3,4])
+print(x)
 
 my_screen.exitonclick()

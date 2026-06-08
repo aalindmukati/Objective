@@ -7,6 +7,10 @@ jason.shape("turtle")
 jason.color('green')
 my_screen.bgcolor('orange')
 
-jason.forward(100)
+jason.speed(3)
+jason.goto(100,15)
+jason.goto(212,190)
+jason.goto(-122,122)
+jason.goto(0,0)
 
 my_screen.exitonclick()

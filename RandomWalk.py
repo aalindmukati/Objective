@@ -4,7 +4,7 @@ import random
 Aj = Turtle()
 screen = Screen()
 
-colors = ['red','blue','green','cyan','black']
+colors = ['red','blue','green','purple','black']
 direction = [0,30,45,60,90,120,270,180]
 
 screen.screensize(100,100)

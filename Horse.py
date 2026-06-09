@@ -24,9 +24,12 @@ if user_bet:
 while is_race_on:
 
     for racers in all_racers:
+        if racers.xcor() > 225:
+            break
         randi_dist = random.randint(0,10)
         racers.forward(randi_dist)
     
 
+print("Dekh le kaun jita aur fir khush hona h to hoja warna ja ")
 screen.exitonclick()
 

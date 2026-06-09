@@ -16,9 +16,9 @@ def random_color():
 angle = [0,30,45,60,90,120,270,180]
 
 screen.screensize(100,100)
-Aj.speed(30)
+Aj.speed(20)
 
-for path in range(3):
+for path in range(45):
     Aj.color(random_color())
     Aj.circle(30)
     Aj.left(10)

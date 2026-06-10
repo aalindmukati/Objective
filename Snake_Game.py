@@ -9,7 +9,7 @@ starting_pos = [ (0,0),(-20,0),(-40,0)]
 
 for position in starting_pos:
     segment = Turtle("square")
-    segment.goto(starting_pos)
+    segment.goto(position)
 
 
 screen.exitonclick()

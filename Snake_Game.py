@@ -5,17 +5,11 @@ screen = Screen()
 screen.setup(600,600)
 screen.bgcolor('purple')
 
-def forward():
-    Aj.forward(20)
-def left():
-    Aj.left(90)
-def right():
-    Aj.right(90)
+starting_pos = [ (0,0),(-20,0),(-40,0)]
 
-screen.listen()
-screen.onkey(key ="space" , fun=forward)
-screen.onkey(key="d", fun=left)
-screen.onkey(key="a", fun=right)
+for position in starting_pos:
+    segment = Turtle("square")
+    segment.goto(starting_pos)
 
 
 screen.exitonclick()

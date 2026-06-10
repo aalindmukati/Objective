@@ -13,6 +13,7 @@ user_1 = User('1',"aalind")
 user_2 = User("2","Kratos")
 
 
+user_2.follow(user_1)
 user_1.follow(user_2)
 print(user_1.follower)
 print(user_1.following)

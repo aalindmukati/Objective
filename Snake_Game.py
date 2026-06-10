@@ -9,6 +9,7 @@ screen.bgcolor("chartreuse4")
 screen.title("Snake Game")
 screen.tracer(0)
 
+
 # --- Game State Variables ---
 starting_pos = [(0, 0), (-20, 0), (-40, 0)]
 snake = []
@@ -23,7 +24,7 @@ for position in starting_pos:
     snake.append(segment)
 
 # --- Create the Food ---
-food = Turtle("circle")
+food = Turtle("square")
 food.color("red")
 food.penup()
 food.shapesize(stretch_len=0.7, stretch_wid=0.7)  # Make food slightly smaller

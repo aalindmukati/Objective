@@ -110,6 +110,10 @@ def snake_game():
             new_segment.goto(snake[-1].position())
             snake.append(new_segment)
 
+            score +=1
+            high_score.clear()
+            high_score.write(f"Score = {score}",align="center",font=("Arail",18,'bold'))
+
         # Detect collision with walls
         if (
             snake[0].xcor() > 290

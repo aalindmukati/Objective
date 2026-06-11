@@ -44,8 +44,6 @@ def snake_game():
         random.randint(-280, 280), random.randint(-280, 280)
     )  # Initial random position
 
-    if snake[0].distance(food) < 15:
-        score.write("U ate \"", align="center", font=("Arial", 24, "bold"))
 
     # --- Movement Functions ---
     def go_up():

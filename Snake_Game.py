@@ -27,6 +27,15 @@ def snake_game():
         game_over.write(f"GAME OVER\n{reason}", align="center", font=("Arial", 24, "bold"))
 
     
+    # --- Score Setup ---
+    high_score = Turtle()
+    high_score.hideturtle()
+    high_score.color("White")
+    high_score.penup()
+    high_score.goto(0,255)
+    high_score.write("Score = 0",align="center",font=("Arail",18,'bold'))
+
+
 
     # --- Game Over ---
     game_over = Turtle()

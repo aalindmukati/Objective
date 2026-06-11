@@ -23,6 +23,13 @@ for position in starting_pos:
     segment.goto(position)
     snake.append(segment)
 
+# --- Game Over ---
+game_over = Turtle()
+game_over.hideturtle()
+game_over.color('white')
+game_over.penup()
+game_over.goto(0,0)
+
 # --- Create the Food ---
 food = Turtle("square")
 food.color("red")

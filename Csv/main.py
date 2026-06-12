@@ -15,4 +15,5 @@
 # print(f'So the temperatures are {temp}')
 
 import pandas as pd 
-pd.read_csv("Csv/weather_data.csv")
+data = pd.read_csv("Csv/weather_data.csv")
+print(data['temp'])

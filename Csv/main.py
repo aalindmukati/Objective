@@ -19,5 +19,9 @@ data = pd.read_csv("Csv/weather_data.csv")
 # print(type(data))
 # # print(data['day'])
 
-data_dict = data.to_dict()
-print(data_dict)
+# data_dict = data.to_dict()
+# print(data_dict)
+
+temp_list = data['temp'].to_list()
+
+print({data['temp'].max()})

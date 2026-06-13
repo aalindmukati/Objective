@@ -22,6 +22,22 @@ data = pd.read_csv("Csv/weather_data.csv")
 # data_dict = data.to_dict()
 # print(data_dict)
 
-temp_list = data['temp'].to_list()
+# temp_list = data['temp'].to_list()
 
-print({data['temp'].max()})
+# print({data['temp'].max()})
+
+# print(data[data.day == 'Monday'])
+
+# print (data[data.temp == data.temp.min()])
+
+# monday = data[data.day=='Monday']
+# monday_temp = monday.temp[0]
+# mtf = monday_temp * 4.25 +32
+# print(mtf)
+
+data_dict = {
+    'Students':['a','b','c'],
+    'marks':[96,99,98]
+}
+data = pd.DataFrame(data_dict)
+data.to_csv("random.csv")

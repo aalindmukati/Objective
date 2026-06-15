@@ -1,8 +1,4 @@
 import requests
 import json
-response = requests.get(url = 'http://api.open-notify.org/iss-now.json')
-
-if response.status_code != 200:
-    raise Exception("Bad response from iss api")
-else:
-    print("nice")
+response = requests.get(url = 'http://api.open-notify.org/iss-ngiow.json')
+response.raise_for_status()

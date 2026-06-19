@@ -82,3 +82,6 @@ else:
         print("The Computer has a higher score. You lose. 😞")
     else:
         print("It's a tie (Push)! 🤝")
+
+
+print("Chal ho gaya ab nikal")
